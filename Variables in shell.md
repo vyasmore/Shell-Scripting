@@ -114,13 +114,17 @@ Vyas
 hello Vyas , and your age is 24.
 </code></pre>
 <h4 id="example-of-username-and-password--">example of username and password :-</h4>
+<p><strong>-p</strong> display a prompt message<br>
+<strong>-s</strong> secret input  (<strong>silent mode</strong>)</p>
 <pre><code>#!/bin/bash  
 read -p "Enter your username: " username 
+read -p "Enter your password: " password
 read -p "Enter your password: " -s password
 echo  "Welcome, ${username}!"
 </code></pre>
 <p>output :-</p>
 <pre><code>Enter your username: vyas
+Enter your password:password
 Enter your password:
 Welcome, vyas!
 </code></pre>
